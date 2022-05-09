@@ -214,8 +214,8 @@ namespace Jellyfin.Api.Helpers
                         // and the requested video bitrate is higher than source video bitrate.
                         if (state.VideoStream.Width.HasValue || state.VideoStream.Height.HasValue)
                         {
-                            state.VideoRequest.MaxWidth = state.VideoStream?.Width;
-                            state.VideoRequest.MaxHeight = state.VideoStream?.Height;
+                            state.VideoRequest.Width = state.VideoStream?.Width;
+                            state.VideoRequest.Height = state.VideoStream?.Height;
                         }
                     }
                     else
